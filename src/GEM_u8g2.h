@@ -141,7 +141,7 @@ class GEM_u8g2 {
     GEM_u8g2& setDrawMenuCallback(void (*drawMenuCallback_)()); // Set callback that will be called at the end of GEM_u8g2::drawMenu()
     GEM_u8g2& removeDrawMenuCallback();                         // Remove callback that was called at the end of GEM_u8g2::drawMenu()
     GEM_u8g2& setDrawCallback(void (*drawCallback_)());         // Set callback that will be called after each completed menu screen
-    GEM_u8g2& removeMenuCallback();                             // Remove callback that was called after each completed menu screen
+    GEM_u8g2& removeDrawCallback();                             // Remove callback that was called after each completed menu screen
 
     /* KEY DETECTION */
 

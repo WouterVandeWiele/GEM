@@ -143,7 +143,7 @@ class GEM_adafruit_gfx {
     GEM_adafruit_gfx& setDrawMenuCallback(void (*drawMenuCallback_)()); // Set callback that will be called at the end of GEM_adafruit_gfx::drawMenu()
     GEM_adafruit_gfx& removeDrawMenuCallback();                         // Remove callback that was called at the end of GEM_adafruit_gfx::drawMenu()
     GEM_adafruit_gfx& setDrawCallback(void (*drawCallback_)());         // Set callback that will be called after each completed menu screen
-    GEM_adafruit_gfx& removeMenuCallback();                             // Remove callback that was called after each completed menu screen
+    GEM_adafruit_gfx& removeDrawCallback();                             // Remove callback that was called after each completed menu screen
 
     /* KEY DETECTION */
 
