@@ -275,6 +275,16 @@ GEM& GEM::removeDrawMenuCallback() {
   return *this;
 }
 
+GEM& GEM::setDrawCallback(void (*drawCallback_)()) {
+  drawCallback = drawCallback_;
+  return *this;
+}
+
+GEM& GEM::removeDrawCallback() {
+  drawCallback = nullptr;
+  return *this;
+}
+
 void GEM::drawTitleBar() {
   _glcd.fontFace(1);
   _glcd.setXY(5,1);

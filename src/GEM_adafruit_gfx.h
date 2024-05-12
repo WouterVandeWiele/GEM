@@ -142,6 +142,8 @@ class GEM_adafruit_gfx {
     GEM_VIRTUAL GEM_adafruit_gfx& drawMenu();                                       // Draw menu on screen, with menu page set earlier in GEM_adafruit_gfx::setMenuPageCurrent()
     GEM_adafruit_gfx& setDrawMenuCallback(void (*drawMenuCallback_)()); // Set callback that will be called at the end of GEM_adafruit_gfx::drawMenu()
     GEM_adafruit_gfx& removeDrawMenuCallback();                         // Remove callback that was called at the end of GEM_adafruit_gfx::drawMenu()
+    GEM_adafruit_gfx& setDrawCallback(void (*drawCallback_)());         // Set callback that will be called after each completed menu screen
+    GEM_adafruit_gfx& removeMenuCallback();                             // Remove callback that was called after each completed menu screen
 
     /* KEY DETECTION */
 
@@ -170,6 +172,7 @@ class GEM_adafruit_gfx {
 
     GEMPage* _menuPageCurrent = nullptr;
     void (*drawMenuCallback)() = nullptr;
+    void (*drawCallback)() = nullptr;
     GEM_VIRTUAL void drawTitleBar();
     GEM_VIRTUAL void drawSprite(int16_t x, int16_t y, const Splash sprite[], uint16_t color);
     GEM_VIRTUAL void printMenuItemString(const char* str, byte num, byte startPos = 0);

@@ -347,6 +347,16 @@ GEM_u8g2& GEM_u8g2::removeDrawMenuCallback() {
   return *this;
 }
 
+GEM_u8g2& GEM_u8g2::setDrawCallback(void (*drawCallback_)()) {
+  drawCallback = drawCallback_;
+  return *this;
+}
+
+GEM_u8g2& GEM_u8g2::removeDrawCallback() {
+  drawCallback = nullptr;
+  return *this;
+}
+
 void GEM_u8g2::drawTitleBar() {
  _u8g2.setFont(_fontFamilies.small);
  _u8g2.setCursor(5, 0);

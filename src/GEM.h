@@ -123,6 +123,8 @@ class GEM {
     GEM_VIRTUAL GEM& drawMenu();                                        // Draw menu on screen, with menu page set earlier in GEM::setMenuPageCurrent()
     GEM& setDrawMenuCallback(void (*drawMenuCallback_)());  // Set callback that will be called at the end of GEM::drawMenu()
     GEM& removeDrawMenuCallback();                          // Remove callback that was called at the end of GEM::drawMenu()
+    GEM& setDrawCallback(void (*drawCallback_)());          // Set callback that will be called after each completed menu screen
+    GEM& removeMenuCallback();                              // Remove callback that was called after each completed menu screen
 
     /* KEY DETECTION */
 
@@ -147,6 +149,7 @@ class GEM {
 
     GEMPage* _menuPageCurrent = nullptr;
     void (*drawMenuCallback)() = nullptr;
+    void (*drawCallback)() = nullptr;
     GEM_VIRTUAL void drawTitleBar();
     GEM_VIRTUAL void printMenuItemString(const char* str, byte num, byte startPos = 0);
     GEM_VIRTUAL void printMenuItemTitle(const char* str, int offset = 0);

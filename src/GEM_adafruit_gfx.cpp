@@ -323,6 +323,10 @@ GEM_adafruit_gfx& GEM_adafruit_gfx::init() {
 
     _agfx.drawBitmap((_agfx.width() - _splash.width) / 2, (_agfx.height() - _splash.height) / 2, _splash.image, _splash.width, _splash.height, _menuForegroundColor);
 
+    if (drawCallback != nullptr) {
+      drawCallback();
+    }
+
     if (_enableVersion) {
       delay(_splashDelay / 2);
       _agfx.setFont(_fontFamilies.small);
@@ -335,6 +339,11 @@ GEM_adafruit_gfx& GEM_adafruit_gfx::init() {
         _agfx.setCursor(x, y);
       }
       _agfx.print(GEM_VER);
+
+      if (drawCallback != nullptr) {
+        drawCallback();
+      }
+
       delay(_splashDelay / 2);
     } else {
       delay(_splashDelay);
@@ -385,6 +394,9 @@ GEM_adafruit_gfx& GEM_adafruit_gfx::drawMenu() {
   if (drawMenuCallback != nullptr) {
     drawMenuCallback();
   }
+  if (drawCallback != nullptr) {
+    drawCallback();
+  }
   return *this;
 }
 
@@ -395,6 +407,17 @@ GEM_adafruit_gfx& GEM_adafruit_gfx::setDrawMenuCallback(void (*drawMenuCallback_
 
 GEM_adafruit_gfx& GEM_adafruit_gfx::removeDrawMenuCallback() {
   drawMenuCallback = nullptr;
+  return *this;
+}
+
+
+GEM_adafruit_gfx& GEM_adafruit_gfx::setDrawCallback(void (*drawCallback_)()) {
+  drawCallback = drawCallback_;
+  return *this;
+}
+
+GEM_adafruit_gfx& GEM_adafruit_gfx::removeDrawCallback() {
+  drawCallback = nullptr;
   return *this;
 }
 
@@ -590,6 +613,9 @@ void GEM_adafruit_gfx::drawMenuPointer(bool clear) {
           }
         }
       }
+    }
+    if (drawCallback != nullptr) {
+      drawCallback();
     }
   }
 }
