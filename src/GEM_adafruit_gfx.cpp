@@ -474,10 +474,10 @@ void GEM_adafruit_gfx::printMenuItem(GEMItem* menuItemTmp, byte yText, byte yDra
         {
           _agfx.setCursor(5 * _textSize, yText);
           if (menuItemTmp->readonly) {
-            printMenuItemTitle(menuItemTmp->title, -1);
+            printMenuItemTitle(menuItemTmp->title.c_str(), -1);
             _agfx.print("^");
           } else {
-            printMenuItemTitle(menuItemTmp->title);
+            printMenuItemTitle(menuItemTmp->title.c_str());
           }
 
           byte menuValuesLeftOffset = getCurrentAppearance()->menuValuesLeftOffset;
@@ -526,10 +526,10 @@ void GEM_adafruit_gfx::printMenuItem(GEMItem* menuItemTmp, byte yText, byte yDra
       case GEM_ITEM_LINK:
         _agfx.setCursor(5 * _textSize, yText);
         if (menuItemTmp->readonly) {
-          printMenuItemFull(menuItemTmp->title, -1);
+          printMenuItemFull(menuItemTmp->title.c_str(), -1);
           _agfx.print("^");
         } else {
-          printMenuItemFull(menuItemTmp->title);
+          printMenuItemFull(menuItemTmp->title.c_str());
         }
         drawSprite(_agfx.width() - 8 * _textSize, yDraw, arrowRight, color);
         break;
@@ -540,10 +540,10 @@ void GEM_adafruit_gfx::printMenuItem(GEMItem* menuItemTmp, byte yText, byte yDra
       case GEM_ITEM_BUTTON:
         _agfx.setCursor((5 + _menuItemFont[getMenuItemFontSize()].width) * _textSize, yText);
         if (menuItemTmp->readonly) {
-          printMenuItemFull(menuItemTmp->title, -1);
+          printMenuItemFull(menuItemTmp->title.c_str(), -1);
           _agfx.print("^");
         } else {
-          printMenuItemFull(menuItemTmp->title);
+          printMenuItemFull(menuItemTmp->title.c_str());
         }
         drawSprite(5 * _textSize, yDraw, arrowBtn, color);
         break;

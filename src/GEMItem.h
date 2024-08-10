@@ -88,56 +88,56 @@ class GEMItem {
       @param 'callbackAction_' - pointer to callback function executed when associated variable is successfully saved
       @param 'callbackVal_' - value of an argument that will be passed to callback within GEMCallbackData (either byte, int, bool, float, double, char or void pointer)
     */
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)());
 
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
     /* 
       Constructors for menu item that represents option select, w/o callback
       @param 'title_' - title of the menu item displayed on the screen
@@ -147,11 +147,11 @@ class GEMItem {
       values GEM_READONLY (alias for true)
       default false
     */
-    GEMItem(const char* title_, byte& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
-    GEMItem(const char* title_, int& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
-    GEMItem(const char* title_, char* linkedVariable_, GEMSelect& select_, bool readonly_ = false);
-    GEMItem(const char* title_, float& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
-    GEMItem(const char* title_, double& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
+    GEMItem(String title_, byte& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
+    GEMItem(String title_, int& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
+    GEMItem(String title_, char* linkedVariable_, GEMSelect& select_, bool readonly_ = false);
+    GEMItem(String title_, float& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
+    GEMItem(String title_, double& linkedVariable_, GEMSelect& select_, bool readonly_ = false);
     /* 
       Constructors for menu item that represents variable, w/ callback (optionally w/ user-defined callback argument)
       @param 'title_' - title of the menu item displayed on the screen
@@ -159,66 +159,66 @@ class GEMItem {
       @param 'callbackAction_' - pointer to callback function executed when associated variable is successfully saved
       @param 'callbackVal_' - value of an argument that will be passed to callback within GEMCallbackData (either byte, int, bool, float, double, char or void pointer)
     */
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)());
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)());
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)());
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)());
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)());
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)());
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)());
 
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, byte& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, int& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, char* linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, bool& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, float& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
 
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
-    GEMItem(const char* title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), int callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), float callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), double callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_);
+    GEMItem(String title_, double& linkedVariable_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_);
     /* 
       Constructors for menu item that represents variable, w/o callback
       @param 'title_' - title of the menu item displayed on the screen
@@ -227,12 +227,12 @@ class GEMItem {
       values GEM_READONLY (alias for true)
       default false
     */
-    GEMItem(const char* title_, byte& linkedVariable_, bool readonly_ = false);
-    GEMItem(const char* title_, int& linkedVariable_, bool readonly_ = false);
-    GEMItem(const char* title_, char* linkedVariable_, bool readonly_ = false);
-    GEMItem(const char* title_, bool& linkedVariable_, bool readonly_ = false);
-    GEMItem(const char* title_, float& linkedVariable_, bool readonly_ = false);
-    GEMItem(const char* title_, double& linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, byte& linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, int& linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, char* linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, bool& linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, float& linkedVariable_, bool readonly_ = false);
+    GEMItem(String title_, double& linkedVariable_, bool readonly_ = false);
     /* 
       Constructor for menu item that represents link to another menu page (via reference)
       @param 'title_' - title of the menu item displayed on the screen
@@ -240,7 +240,7 @@ class GEMItem {
       @param 'readonly_' (optional) - set readonly mode for the link (user won't be able to navigate to linked page)
       values GEM_READONLY (alias for true)
     */
-    GEMItem(const char* title_, GEMPage& linkedPage_, bool readonly_ = false);
+    GEMItem(String title_, GEMPage& linkedPage_, bool readonly_ = false);
     /* 
       Constructor for menu item that represents link to another menu page (via pointer)
       @param 'title_' - title of the menu item displayed on the screen
@@ -248,7 +248,7 @@ class GEMItem {
       @param 'readonly_' (optional) - set readonly mode for the link (user won't be able to navigate to linked page)
       values GEM_READONLY (alias for true)
     */
-    GEMItem(const char* title_, GEMPage* linkedPage_, bool readonly_ = false);
+    GEMItem(String title_, GEMPage* linkedPage_, bool readonly_ = false);
     /* 
       Constructor for menu item that represents button w/ callback (optionally w/ user-defined callback argument)
       @param 'title_' - title of the menu item displayed on the screen
@@ -257,15 +257,15 @@ class GEMItem {
       @param 'readonly_' (optional) - set readonly mode for the button (user won't be able to call action associated with it)
       values GEM_READONLY (alias for true)
     */
-    GEMItem(const char* title_, void (*callbackAction_)(), bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData));
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), int callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), float callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), double callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_, bool readonly_ = false);
-    GEMItem(const char* title_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(), bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData));
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), byte callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), int callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), float callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), double callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), bool callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), const char* callbackVal_, bool readonly_ = false);
+    GEMItem(String title_, void (*callbackAction_)(GEMCallbackData), void* callbackVal_, bool readonly_ = false);
 
     GEMItem& setCallbackVal(byte callbackVal_);         // Set value of an argument that will be passed to callback within GEMCallbackData (either byte, int, bool, float, double, char or void pointer)
     GEMItem& setCallbackVal(int callbackVal_);
@@ -275,8 +275,8 @@ class GEMItem {
     GEMItem& setCallbackVal(const char* callbackVal_);
     GEMItem& setCallbackVal(void* callbackVal_);
     GEMCallbackData getCallbackData();                  // Get GEMCallbackData struct associated with menu item
-    GEM_VIRTUAL GEMItem& setTitle(const char* title_);  // Set title of the menu item
-    GEM_VIRTUAL const char* getTitle();                 // Get title of the menu item
+    GEM_VIRTUAL GEMItem& setTitle(String title_);  // Set title of the menu item
+    GEM_VIRTUAL String getTitle();                 // Get title of the menu item
     GEMItem& setPrecision(byte prec);                   // Explicitly set precision for float or double variables as required by dtostrf() conversion,
                                                         // i.e. the number of digits after the decimal sign
     GEMItem& setAdjustedASCIIOrder(bool mode = true);   // Turn adjsuted order of characters when editing char[17] variables on (with space character followed by `a` and preceded by `) or off
@@ -292,7 +292,7 @@ class GEMItem {
     GEM_VIRTUAL void* getLinkedVariablePointer();       // Get pointer to a linked variable (relevant for menu items that represent variable)
     GEM_VIRTUAL GEMItem* getMenuItemNext(bool total = false); // Get next menu item (including hidden ones if total set to true)
   protected:
-    const char* title;
+    String title;
     void* linkedVariable = nullptr;
     byte linkedType;
     byte type;
