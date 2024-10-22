@@ -753,6 +753,9 @@ void GEM_adafruit_gfx::enterEditValueMode() {
       break;
     #endif
   }
+  if (drawCallback != nullptr) {
+    drawCallback();
+  }
 }
 
 void GEM_adafruit_gfx::checkboxToggle() {
@@ -1165,6 +1168,9 @@ void GEM_adafruit_gfx::dispatchKeyPress() {
         case GEM_KEY_OK:
           saveEditValue();
           break;
+      }
+      if (drawCallback != nullptr) {
+        drawCallback();
       }
     } else {
       switch (_currentKey) {
